@@ -10,16 +10,20 @@ const Navbar = () => {
         <Link to="/" className="text-2xl font-bold text-white">ForexPro</Link>
         <div className="hidden md:flex items-center space-x-8">
           <Link to="/dashboard" className="text-white/80 hover:text-white transition-colors">Dashboard</Link>
-          <a href="#" className="text-white/80 hover:text-white transition-colors">Markets</a>
-          <a href="#" className="text-white/80 hover:text-white transition-colors">Analytics</a>
-          <a href="#" className="text-white/80 hover:text-white transition-colors">Learn</a>
-          <Button variant="outline" className="text-white border-white/20 hover:bg-white/10">
-            Get Started
-          </Button>
-          <Button className="bg-[#F2FF44] text-black hover:bg-[#E2EF34]">
-            Sign in
-            <LogIn className="w-4 h-4 ml-2" />
-          </Button>
+          <Link to="/markets" className="text-white/80 hover:text-white transition-colors">Markets</Link>
+          <Link to="/analytics" className="text-white/80 hover:text-white transition-colors">Analytics</Link>
+          <Link to="/learn" className="text-white/80 hover:text-white transition-colors">Learn</Link>
+          <Link to="/get-started">
+            <Button variant="outline" className="text-white border-white/20 hover:bg-white/10">
+              Get Started
+            </Button>
+          </Link>
+          <Link to="/sign-in">
+            <Button className="bg-[#F2FF44] text-black hover:bg-[#E2EF34]">
+              Sign in
+              <LogIn className="w-4 h-4 ml-2" />
+            </Button>
+          </Link>
         </div>
       </div>
     </nav>
