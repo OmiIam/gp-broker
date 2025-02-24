@@ -1,22 +1,23 @@
+
 import { Card } from "@/components/ui/card";
-import { Wallet, Shield, CreditCard } from "lucide-react";
+import { TrendingUp, LineChart, BarChart, Shield } from "lucide-react";
 
 const Features = () => {
   const features = [
     {
-      icon: <Wallet className="w-6 h-6 text-white" />,
-      title: "Mobile Banking",
-      description: "Manage your finances on the go with our secure mobile banking platform"
+      icon: <TrendingUp className="w-6 h-6 text-white" />,
+      title: "Advanced Trading",
+      description: "Execute trades with precision using our advanced trading tools and charts"
+    },
+    {
+      icon: <LineChart className="w-6 h-6 text-white" />,
+      title: "Real-time Analytics",
+      description: "Get instant market analysis and real-time price updates for informed decisions"
     },
     {
       icon: <Shield className="w-6 h-6 text-white" />,
-      title: "Secure Transactions",
-      description: "Bank-grade security for all your transactions and personal data"
-    },
-    {
-      icon: <CreditCard className="w-6 h-6 text-white" />,
-      title: "Digital Cards",
-      description: "Virtual and physical cards with advanced control features"
+      title: "Secure Trading",
+      description: "Trade with confidence knowing your funds are protected with bank-grade security"
     }
   ];
 
@@ -27,10 +28,10 @@ const Features = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <h2 className="text-4xl font-bold text-white">
-              All the experience in the new application
+              Professional Trading Tools
             </h2>
             <p className="text-xl text-white/60">
-              Simple transfers, payments for utilities, functional statements, card settings, for which you used to have to go to the branch online-banking
+              Access advanced charting, technical analysis tools, and real-time market data to make informed trading decisions
             </p>
           </div>
           <div className="grid gap-6">

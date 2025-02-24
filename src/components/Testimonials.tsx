@@ -1,22 +1,23 @@
+
 import { Card } from "@/components/ui/card";
 import { MessageSquare } from "lucide-react";
 
 const Testimonials = () => {
   const testimonials = [
     {
-      quote: "The best banking experience I've ever had. Simple, fast, and secure.",
-      author: "Sarah Johnson",
-      role: "Business Owner"
-    },
-    {
-      quote: "This app has completely transformed how I manage my finances.",
+      quote: "The best trading platform I've used. The real-time analytics are incredible.",
       author: "Michael Chen",
-      role: "Software Engineer"
+      role: "Professional Trader"
     },
     {
-      quote: "Incredible user experience. Everything just works seamlessly.",
-      author: "Emma Davis",
-      role: "Financial Analyst"
+      quote: "ForexPro's platform helped me become a confident forex trader.",
+      author: "Sarah Johnson",
+      role: "Day Trader"
+    },
+    {
+      quote: "Outstanding technical analysis tools and excellent customer support.",
+      author: "David Miller",
+      role: "Investment Analyst"
     }
   ];
 
@@ -25,10 +26,10 @@ const Testimonials = () => {
       <div className="absolute inset-0 bg-accent/5 backdrop-blur-3xl"></div>
       <div className="max-w-7xl mx-auto relative z-10">
         <h2 className="text-4xl font-bold text-white text-center mb-4">
-          What Our Users Say
+          Trusted by Traders
         </h2>
         <p className="text-xl text-white/60 text-center mb-12 max-w-2xl mx-auto">
-          Join thousands of satisfied users who have transformed their banking experience
+          Join thousands of successful traders who have chosen ForexPro as their preferred trading platform
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (

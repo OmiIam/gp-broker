@@ -1,4 +1,5 @@
-import { Github, Twitter, Linkedin } from "lucide-react";
+
+import { Github, Twitter, Linkedin, TrendingUp } from "lucide-react";
 import { Button } from "./ui/button";
 
 const Footer = () => {
@@ -8,9 +9,12 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           <div className="space-y-4">
-            <h3 className="text-2xl font-bold text-white">Cardo</h3>
+            <div className="flex items-center gap-2">
+              <TrendingUp className="w-6 h-6 text-white" />
+              <h3 className="text-2xl font-bold text-white">ForexPro</h3>
+            </div>
             <p className="text-white/60">
-              Redefining the future of financial management with innovative solutions.
+              Leading the future of forex trading with innovative solutions.
             </p>
             <div className="flex space-x-4">
               <Button variant="ghost" size="icon" className="hover:bg-white/10">
@@ -26,12 +30,12 @@ const Footer = () => {
           </div>
           
           <div className="space-y-4">
-            <h4 className="text-lg font-semibold text-white">Product</h4>
+            <h4 className="text-lg font-semibold text-white">Trading</h4>
             <ul className="space-y-2">
-              <li><a href="#" className="text-white/60 hover:text-white transition-colors">Features</a></li>
+              <li><a href="#" className="text-white/60 hover:text-white transition-colors">Platform Features</a></li>
               <li><a href="#" className="text-white/60 hover:text-white transition-colors">Security</a></li>
-              <li><a href="#" className="text-white/60 hover:text-white transition-colors">Business</a></li>
-              <li><a href="#" className="text-white/60 hover:text-white transition-colors">Enterprise</a></li>
+              <li><a href="#" className="text-white/60 hover:text-white transition-colors">Market Analysis</a></li>
+              <li><a href="#" className="text-white/60 hover:text-white transition-colors">Trading Tools</a></li>
             </ul>
           </div>
           
@@ -50,7 +54,7 @@ const Footer = () => {
             <ul className="space-y-2">
               <li><a href="#" className="text-white/60 hover:text-white transition-colors">Terms</a></li>
               <li><a href="#" className="text-white/60 hover:text-white transition-colors">Privacy</a></li>
-              <li><a href="#" className="text-white/60 hover:text-white transition-colors">Cookies</a></li>
+              <li><a href="#" className="text-white/60 hover:text-white transition-colors">Risk Disclosure</a></li>
               <li><a href="#" className="text-white/60 hover:text-white transition-colors">Licenses</a></li>
             </ul>
           </div>
@@ -58,7 +62,7 @@ const Footer = () => {
         
         <div className="mt-12 pt-8 border-t border-white/10">
           <p className="text-center text-white/60">
-            © 2024 Cardo. All rights reserved.
+            © 2024 ForexPro. All rights reserved. Trading forex/CFDs carries significant risks.
           </p>
         </div>
       </div>
