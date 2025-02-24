@@ -11,6 +11,8 @@ import Analytics from "./pages/Analytics";
 import Learn from "./pages/Learn";
 import GetStarted from "./pages/GetStarted";
 import SignIn from "./pages/SignIn";
+import CreateAccount from "./pages/CreateAccount";
+import IdentityVerification from "./pages/IdentityVerification";
 
 const queryClient = new QueryClient();
 
@@ -28,6 +30,8 @@ const App = () => (
           <Route path="/learn" element={<Learn />} />
           <Route path="/get-started" element={<GetStarted />} />
           <Route path="/sign-in" element={<SignIn />} />
+          <Route path="/create-account" element={<CreateAccount />} />
+          <Route path="/identity-verification" element={<IdentityVerification />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>

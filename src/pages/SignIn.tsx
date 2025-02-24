@@ -4,6 +4,7 @@ import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { LogIn, Lock, Mail } from "lucide-react";
 import Background3D from "@/components/Background3D";
+import { Link } from "react-router-dom";
 
 const SignIn = () => {
   return (
@@ -54,9 +55,9 @@ const SignIn = () => {
           <div className="mt-6 pt-6 border-t border-white/10 text-center">
             <p className="text-white/60">
               Don't have an account?{" "}
-              <a href="#" className="text-white hover:text-[#F2FF44]">
+              <Link to="/create-account" className="text-white hover:text-[#F2FF44]">
                 Create one now
-              </a>
+              </Link>
             </p>
           </div>
         </Card>
